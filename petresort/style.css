@@ -1,5 +1,9 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+  
+}
+body{
+    background-color: #eee;
 }
 /* 
 img {
@@ -8,21 +12,52 @@ img {
     height: 100%;
     object-fit: cover;
   } */
-.wrapper{
-    width: 1200px;
-    display:grid;
+.wrapper {
+  width: 1200px;
+  display: grid;
 }
-.topleft{
-    margin: 20px;
-    border: solid;
-    background-color: chartreuse;
-    display:flex; 
+.top {
+  margin: 20px;
+  border: solid;
+  background-color: chartreuse;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-.togright{
-    display: flex;
-    justify-content: end;
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
-.img1{
-    margin: 20px;
-    border-radius:
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-right: 30px;
 }
+.img1 {
+  background-image: url(img/happiest-dog.webp);
+  height: 600px;
+  border-radius: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: white;
+  padding: 20px;
+  font-size: large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.og {
+  margin: 20px;
+  display: flex;
+  border-radius: 20px;
+  width: auto;
+  background-color: white;
+  padding: 20px;
+  /* border-style: solid;
+  border-color: black; */
+}
+
